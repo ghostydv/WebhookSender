@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>INFORMACION DE NAUJ BOT</title>
+    
+    <style>
+        /* Estilos para la sección de categorías */
+        .categories {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .category-btn {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #f7f7f7;
+            color: rgb(0, 65, 243);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .category-btn.active {
+            background-color: #000000;
+        }
+
+        /* Estilos para los comandos */
+        .commands {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .command {
+            margin: 10px;
+            padding: 10px;
+            background-color: #4a93fff5;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 200px;
+            text-align: center;
+            margin-bottom: 20px; /* Agregar margen inferior para separar los comandos */
+        }
+
+        .command-description {
+            margin-bottom: 10px; /* Agregar espacio entre la descripción y el ejemplo de uso */
+        }
+
+        .command-usage {
+            margin-bottom: 10px; /* Agregar espacio entre ejemplos de uso */
+        }
+    </style>
+</head>
+<body>
+  
+    <div class="container">
+        <div class="header">
+            <h1>INFORMACION/COMANDOS! DE NAUJ BOT</h1>
+        </div>
+        <div class="categories">
+            <button class="category-btn active" data-category="all">Todos</button>
+            <button class="category-btn" data-category="moderacion">Moderación</button>
+            <button class="category-btn" data-category="publicos">Comandos Públicos</button>
+            <button class="category-btn" data-category="configuracion">Configuración</button>
+            <button class="category-btn" data-category="premium">Comandos Premium</button>
+        </div>
+
+        <div class="commands">
+            <!-- Comandos de configuración -->
+            <div class="command" data-category="configuracion">
+                <h2>Configuración</h2>
+                <div class="command-description">
+                    <p><strong>/apelacionmsg</strong></p>
+                    <p>Descripción: Apelación de mensaje.</p>
+                </div>
+                <div class="command-usage">
+                    <p>Ejemplo de uso:</p>
+                    <p>/apelacionmsg [usuario] (razón)</p>
+                </div>
+                
+                <div class="command-description">
+                    <p><strong>/infoapelaciones</strong></p>
+                    <p>Descripción: Información de apelaciones.</p>
+                </div>
+                <div class="command-usage">
+                    <p>Ejemplo de uso:</p>
+                    <p>/infoapelaciones</p>
+                </div>
+                
+                <div class="command-description">
+                    <p><strong>/postulaciones</strong></p>
+                    <p>Descripción: Postulaciones.</p>
+                </div>
+                <div class="command-usage">
+                    <p>Ejemplo de uso:</p>
+                    <p>/postulaciones [usuario]</p>
+                </div>
+                
+                <div class="command-description">
+                    <p><strong>/support</strong></p>
+                    <p>Descripción: Soporte.</p>
+                </div>
+                <div class="command-usage">
+                    <p>Ejemplo de uso:</p>
+                    <p>/support</p>
+                </div>
+            </div>
+
+<!-- Comandos de moderación -->
+<div class="command" data-category="moderacion">
+  <h2>Moderación</h2>
+  <div class="command-description">
+      <p><strong>/ban</strong></p>
+      <p>Descripción: Banea a un usuario.</p>
+  </div>
+  <div class="command-usage">
+      <p>Ejemplo de uso:</p>
+      <p>/ban [usuario] (razón)</p>
+  </div>
+
+  <div class="command-description">
+      <p><strong>/historial</strong></p>
+      <p>Descripción: Muestra el historial de un usuario.</p>
+  </div>
+  <div class="command-usage">
+      <p>Ejemplo de uso:</p>
+      <p>/historial [usuario]</p>
+  </div>
+
+  <div class="command-description">
+      <p><strong>/kick</strong></p>
+      <p>Descripción: Expulsa a un usuario.</p>
+  </div>
+  <div class="command-usage">
+      <p>Ejemplo de uso:</p>
+      <p>/kick [usuario]</p>
+  </div>
+
+  <div class="command-description">
+      <p><strong>/msg</strong></p>
+      <p>Descripción: Envia un mensaje a un usuario.</p>
+  </div>
+  <div class="command-usage">
+      <p>Ejemplo de uso:</p>
+      <p>/msg [usuario] [mensaje]</p>
+  </div>
+
+  <div class="command-description">
+      <p><strong>/normayuda</strong></p>
+      <p>Descripción: Muestra ayuda sobre las normas del servidor.</p>
+  </div>
+  <div class="command-usage">
+      <p>Ejemplo de uso:</p>
+      <p>/normayuda</p>
+  </div>
+
+  <div class="command-description">
+      <p><strong>/nuevovideo</strong></p>
+      <p>Descripción: Publica un nuevo video en el servidor.</p>
+  </div>
+  <div class="command-usage">
+      <p>Ejemplo de uso:</p>
+      <p>/nuevovideo [título]</p>
+  </div>
+
+  <div class="command-description">
+      <p><strong>/proximovideo</strong></p>
+      <p>Descripción: Muestra información sobre el próximo video.</p>
+  </div>
+  <div class="command-usage">
+      <p>Ejemplo de uso:</p>
+      <p>/proximovideo</p>
+  </div>
+
+  <div class="command-description">
+      <p><strong>/reglas</strong></p>
+      <p>Descripción: Muestra las reglas del servidor.</p>
+  </div>
+  <div class="command-usage">
+      <p>Ejemplo de uso:</p>
+      <p>/reglas</p>
+  </div>
+
+  <div class="command-description">
+      <p><strong>/roles</strong></p>
+      <p>Descripción: Muestra los roles del servidor.</p>
+  </div>
+  <div class="command-usage">
+      <p>Ejemplo de uso:</p>
+      <p>/roles</p>
+  </div>
+
+  <div class="command-description">
+      <p><strong>/sellmsg</strong></p>
+      <p>Descripción: Vende un mensaje.</p>
+  </div>
+  <div class="command-usage">
+      <p>Ejemplo de uso:</p>
+      <p>/sellmsg [mensaje]</p>
+  </div>
+
+  <div class="command-description">
+      <p><strong>/timeout</strong></p>
+      <p>Descripción: Aplica un tiempo de espera a un usuario.</p>
+  </div>
+  <div class="command-usage">
+      <p>Ejemplo de uso:</p>
+      <p>/timeout [usuario] [tiempo] (razón)</p>
+  </div>
+
+  <div class="command-description">
+      <p><strong>/warn</strong></p>
+      <p>Descripción: Advierte a un usuario.</p>
+  </div>
+  <div class="command-usage">
+      <p>Ejemplo de uso:</p>
+      <p>/warn [usuario] (razón)</p>
+  </div>
+</div>
+
+<!-- Comandos públicos -->
+<div class="command" data-category="publicos">
+  <h2>Comandos Públicos</h2>
+  <div class="command-description">
+      <p><strong>/avatar</strong></p>
+      <p>Descripción: Muestra el avatar de un usuario.</p>
+  </div>
+  <div class="command-usage">
+      <p>Ejemplo de uso:</p>
+      <p>/avatar [usuario]</p>
+  </div>
+
+  <div class="command-description">
+      <p><strong>/botinfo</strong></p>
+      <p>Descripción: Proporciona información sobre el bot.</p>
+  </div>
+  <div class="command-usage">
+      <p>Ejemplo de uso:</p>
+      <p>/botinfo</p>
+  </div>
+
+  <div class="command-description">
+      <p><strong>/botlist</strong></p>
+      <p>Descripción: Muestra la lista de bots en el servidor.</p>
+  </div>
+  <div class="command-usage">
+      <p>Ejemplo de uso:</p>
+      <p>/botlist</p>
+  </div>
+
+  <div class="command-description">
+      <p><strong>/codigo</strong></p>
+      <p>Descripción: Muestra el código de un comando específico.</p>
+  </div>
+  <div class="command-usage">
+      <p>Ejemplo de uso:</p>
+      <p>/codigo [comando]</p>
+  </div>
+
+  <div class="command-description">
+      <p><strong>/ping</strong></p>
+      <p>Descripción: Comprueba la latencia del bot.</p>
+  </div>
+  <div class="command-usage">
+      <p>Ejemplo de uso:</p>
+      <p>/ping</p>
+  </div>
+
+  <div class="command-description">
+      <p><strong>/serverinfo</strong></p>
+      <p>Descripción: Muestra información del servidor.</p>
+  </div>
+  <div class="command-usage">
+      <p>Ejemplo de uso:</p>
+      <p>/serverinfo</p>
+  </div>
+
+  <div class="command-description">
+      <p><strong>/serverbanner</strong></p>
+      <p>Descripción: Muestra el banner del servidor.</p>
+  </div>
+  <div class="command-usage">
+      <p>Ejemplo de uso:</p>
+      <p>/serverbanner</p>
+  </div>
+
+  <div class="command-description">
+      <p><strong>/servericon</strong></p>
+      <p>Descripción: Muestra el icono del servidor.</p>
+  </div>
+  <div class="command-usage">
+      <p>Ejemplo de uso:</p>
+      <p>/servericon</p>
+  </div>
+
+  <div class="command-description">
+      <p><strong>/sugerencia</strong></p>
+      <p>Descripción: Envía una sugerencia al servidor.</p>
+  </div>
+  <div class="command-usage">
+      <p>Ejemplo de uso:</p>
+      <p>/sugerencia [mensaje]</p>
+  </div>
+
+  <div class="command-description">
+      <p><strong>/user</strong></p>
+      <p>Descripción: Muestra información de un usuario.</p>
+  </div>
+  <div class="command-usage">
+      <p>Ejemplo de uso:</p>
+      <p>/user [usuario]</p>
+  </div>
+
+  <div class="command-description">
+      <p><strong>/userbanner</strong></p>
+      <p>Descripción: Muestra el banner de un usuario.</p>
+  </div>
+  
+  <div class="command-usage">
+      <p>Ejemplo de uso:</p>
+      <p>/userbanner [usuario]</p>
+  </div>
+</div>
+
+            <!-- Comandos premium -->
+            <div class="command" data-category="premium">
+                <h2>Comandos Premium</h2>
+                <p>Soon/ Próximamente</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Nauj Bot. Todos los derechos reservados. | ¿Necesitas ayuda? <a href="https://discord.com">Únete a nuestro servidor de Discord</a></p>
+        </div>
+    </div>
+
+    <script>
+        // Agregar el evento click a los botones de categoría
+        document.querySelectorAll('.category-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const category = button.getAttribute('data-category');
+                document.querySelectorAll('.category-btn').forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                filterCommands(category);
+            });
+        });
+
+        // Función para filtrar los comandos por categoría
+        function filterCommands(category) {
+            const commands = document.querySelectorAll('.command');
+            commands.forEach(command => {
+                const commandCategory = command.getAttribute('data-category');
+                if (category === 'all' || category === commandCategory) {
+                    command.style.display = 'block';
+                } else {
+                    command.style.display = 'none';
+                }
+            });
+        }
+
+        // Llamar a la función para mostrar todos los comandos al cargar la página
+        window.addEventListener('DOMContentLoaded', () => {
+            filterCommands('all');
+        });
+    </script>
+</body>
+</html>
