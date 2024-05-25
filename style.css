@@ -182,11 +182,6 @@ button {
   row-gap: 1rem;
 }
 
-.homegroup {
-  display: grid;
-  position: relative;
-  padding-top: 2rem;
-}
 /*------------------------------------------------------------------------------------------------------------------*/
 /* TITULO DE HOME */
 .hometitle {
