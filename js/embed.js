@@ -5,10 +5,7 @@ $("#loginForm").submit(function(event) {
 
     // Aquí puedes definir múltiples combinaciones de nombre de usuario y contraseña
     var validCredentials = {
-        "V$": "431",
-        "Juan": "7362",
-        "Dany": "322424/",
-        "user2": "password2"
+        "Ghosty": "3345",
         // Agrega más combinaciones si lo deseas
     };
 
